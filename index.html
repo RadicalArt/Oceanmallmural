@@ -60,34 +60,34 @@
       <button>Tap to Unmute</button> 
     </div>
 
-    <a-scene mindar-image="imageTargetSrc: https://xdsmgyjuwrsmlvtwsjyu.supabase.co/storage/v1/object/public/Mind%20Bucket/oceanmall.mind?t=2024-12-30T01%3A07%3A43.361Z" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+    <a-scene mindar-image="imageTargetSrc: oceanmall2.mind" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
       <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
       
       <a-assets>
-        <video id="video1" src="https://res.cloudinary.com/dup6ljodi/video/upload/v1735514459/Cinema_Dark_Small_comp_fv2euv.mp4" muted preload loop></video>
-        <video id="video2" src="https://res.cloudinary.com/dup6ljodi/video/upload/v1735514457/Batman_comp_ydqnm2.mp4" muted preload loop></video>
-        <video id="video3" src="https://res.cloudinary.com/dup6ljodi/video/upload/v1735514459/shopping_comp_jixprn.mp4" muted preload loop></video>
-        <video id="video4" src="https://res.cloudinary.com/dup6ljodi/video/upload/v1735514459/Playarea_Done_Final_comp_xmyd6f.mp4" muted preload loop></video>
+        <video id="video1" src="Batman_comp_ydqnm2.mp4" muted preload loop></video>
+        <video id="video2" src="Cinema_Dark_Small_comp_fv2euv.mp4" muted preload loop></video>
+        <video id="video3" src="shopping_comp_jixprn.mp4" muted preload loop></video>
+        <video id="video4" src="Playarea_Done_Final_comp_xmyd6f.mp4" muted preload loop></video>
       </a-assets>
       
       <!-- Target 1 -->
       <a-entity mindar-image-target="targetIndex: 0" id="target1">
-        <a-plane material="src: #video1;" width="1" height="1.46" video-controller="target: target1; videoId: video1"></a-plane>
+        <a-plane material="src: #video1;" width="1" height="1.646" video-controller="target: target1; videoId: video1"></a-plane>
       </a-entity>
 
       <!-- Target 2 -->
       <a-entity mindar-image-target="targetIndex: 1" id="target2">
-        <a-plane material="src: #video2;" width="1" height="1.46" video-controller="target: target2; videoId: video2"></a-plane>
+        <a-plane material="src: #video2;" width="1" height="1.646" video-controller="target: target2; videoId: video2"></a-plane>
       </a-entity>
 
        <!-- Target 3 -->
        <a-entity mindar-image-target="targetIndex: 2" id="target3">
-        <a-plane material="src: #video3;" width="1" height="1.46" video-controller="target: target3; videoId: video3"></a-plane>
+        <a-plane material="src: #video3;" width="1" height="1.646" video-controller="target: target3; videoId: video3"></a-plane>
       </a-entity>
 
       <!-- Target 4 -->
       <a-entity mindar-image-target="targetIndex: 3" id="target4">
-        <a-plane material="src: #video4;" width="1" height="1.46" video-controller="target: target4; videoId: video4"></a-plane>
+        <a-plane material="src: #video4;" width="1" height="1.646" video-controller="target: target4; videoId: video4"></a-plane>
       </a-entity>
 
     </a-scene>
